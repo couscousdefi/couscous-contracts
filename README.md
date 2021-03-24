@@ -1,1 +1,1 @@
-# cous-contracts
+# couscousdefi-contracts

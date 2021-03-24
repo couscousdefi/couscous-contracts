@@ -9,13 +9,11 @@
   "scripts": {
     "ganache": "ganache-cli -p 8545 -i 666 -d",
     "deploy": "truffle migrate --reset",
-    "mock": "npm run deploy && truffle exec scripts/createTokens.js",
-    "testnet-verify": "truffle run verify MasterChefV2 --network testnet_bsc",
     "testnet": "truffle migrate --reset --network testnet_bsc",
     "mainnet": "truffle migrate --reset --network mainnet_bsc",
     "test": "truffle test --network test",
-    "test-f": "truffle test --network test test/2_forge.test.js",
-    "upgrade": "truffle exec scripts/upgradeForge.js --network rinkeby"
+    "testnet:verify": "truffle run verify MasterChef --network testnet_bsc",
+    "mainnet:verify": "truffle run verify MasterChef --network mainnet_bsc"
   },
   "devDependencies": {
     "@openzeppelin/contracts": "^3.1.0",
